@@ -15,6 +15,8 @@ fun Application.module(testing: Boolean = false) {
         get("/") {
             call.respondText("HELLO WORLD!", contentType = ContentType.Text.Plain)
         }
+        get("/hello") {
+            call.respondText("{\"HELLO\": \"WORLD!\"}", contentType = ContentType.Application.Json, status = HttpStatusCode.Accepted)
+        }
     }
 }
-
