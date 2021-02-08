@@ -1,0 +1,3 @@
+# discography
+
+`gradle init`
