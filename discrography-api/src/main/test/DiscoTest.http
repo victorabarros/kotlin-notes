@@ -1,0 +1,49 @@
+POST http://127.0.0.1:8080/disco
+Content-Type: application/json
+
+{
+  "id": "100",
+  "name": "Piece of Mind",
+  "group": "Iron Maiden",
+  "year": 1983
+}
+
+
+###
+POST http://127.0.0.1:8080/disco
+Content-Type: application/json
+
+{
+  "id": "200",
+  "name": "Killers",
+  "group": "Iron Maiden",
+  "year": 1982
+}
+
+###
+POST http://127.0.0.1:8080/disco
+Content-Type: application/json
+
+{
+  "id": "300",
+  "name": "Virtual XI",
+  "group": "Iron Maiden",
+  "year": 1998
+}
+
+
+###
+GET http://127.0.0.1:8080/disco
+Accept: application/json
+
+###
+GET http://127.0.0.1:8080/disco/200
+
+###
+GET http://127.0.0.1:8080/disco/500
+
+###
+DELETE http://127.0.0.1:8080/disco/100
+
+###
+DELETE http://127.0.0.1:8080/disco/500
