@@ -3,3 +3,5 @@
 https://youtu.be/KLGV7P7XEyo
 
 - `make init`
+
+continue from https://youtu.be/KLGV7P7XEyo?t=147
