@@ -5,11 +5,13 @@ init:
 	@clear
 	@echo "\e[1m\033[33mInitializing project\e[0m"
 	@make docker-command STAGE="init" DOCKER_IMAGE="gradle" COMMAND="gradle init"
+	@sudo chmod -R 777 .
 
 run:
 	@clear
 	@echo "\e[1m\033[33mStart running project\e[0m"
-	@make docker-command STAGE="run" DOCKER_IMAGE="gradle" COMMAND="gradle run"
+	@./gradlew	run
+	# @make docker-command STAGE="run" DOCKER_IMAGE="gradle" COMMAND="gradle run"
 
 debug:
 	@clear

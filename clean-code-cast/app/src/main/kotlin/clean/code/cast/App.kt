@@ -3,13 +3,21 @@
  */
 package clean.code.cast
 
-class App {
-    val greeting: String
-        get() {
-            return "Hello World!"
-        }
-}
+import io.ktor.application.*
+import io.ktor.http.*
+import io.ktor.response.*
+import io.ktor.routing.*
+import io.ktor.server.netty.Netty
+import io.ktor.server.engine.embeddedServer
+
 
 fun main() {
-    println(App().greeting)
+    embeddedServer(Netty, 8081) {
+        routing {
+            get("/") {
+                println("home access")
+                call.respondText("Hello from ktor")
+            }
+        }
+    }.start(wait = true)
 }

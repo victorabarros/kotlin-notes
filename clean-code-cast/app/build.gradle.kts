@@ -34,6 +34,16 @@ dependencies {
 
     // Use the Kotlin JUnit integration.
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
+
+    // https://ktor.io/docs/gradle.html#add-ktor-dependencies
+    implementation("io.ktor:ktor-server-core:1.5.1")
+    implementation("io.ktor:ktor-server-netty:1.5.1")
+    // implementation("ch.qos.logback:logback-classic:1.2.3")
+
+
+    // TODO try later
+    // https://package-search.jetbrains.com/package?id=io.ktor%3Aktor
+    // implementation("io.ktor:ktor:1.5.1")
 }
 
 application {
